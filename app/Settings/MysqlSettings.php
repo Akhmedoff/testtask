@@ -5,9 +5,10 @@
 	class MysqlSettings implements Configuration{
 
 		public function getSettings(){
-			$settings = (array) DB::table('settings')->first();
-			unset($settings['id']);
-			return $settings;
+			$settings = DB::table('settings')
+				->select('company_name','logo','address','map','url','email')
+				->first();
+			return (array) $settings;
 		}
 
 	}
