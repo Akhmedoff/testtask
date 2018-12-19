@@ -3,6 +3,8 @@
 <ul>
     <li>config/base.php</li>
     <li>config/setprofile.php</li>
+    <li>database/migrations/*.php</li>
+    <li>database/seeds/*.php</li>
     <li>app/models/setting.php</li>
     <li>app/settings/Configuration.php</li>
     <li>app/settings/MysqlSettings.php</li>
